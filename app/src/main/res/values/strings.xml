@@ -2,4 +2,6 @@
     <string name="app_name">EasyChat</string>
     <string name="defaultMessage">Message</string>
     <string name="confirmCloseApp">Are you sure close app?</string>
+    <string name="finish">Finish</string>
+    <string name="cancel">Cancel</string>
 </resources>

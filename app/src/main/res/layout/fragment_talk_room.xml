@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/subRecyclerView"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/textField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/mainRecyclerView"
+        android:paddingHorizontal="@dimen/padding_medium"
+        android:paddingVertical="@dimen/padding_medium"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:outlineSpotShadowColor="@color/alto_010"
+            app:boxBackgroundColor="@color/alto_010"
+            app:boxCornerRadiusBottomEnd="@dimen/radius_corner_text"
+            app:boxCornerRadiusBottomStart="@dimen/radius_corner_text"
+            app:boxCornerRadiusTopEnd="@dimen/radius_corner_text"
+            app:boxCornerRadiusTopStart="@dimen/radius_corner_text"
+            app:boxStrokeColor="@color/dark_12"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/messageEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sendButton"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="4dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="send"
+            android:textColor="@android:color/white"
+            app:cornerRadius="@dimen/radius_corner_text" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

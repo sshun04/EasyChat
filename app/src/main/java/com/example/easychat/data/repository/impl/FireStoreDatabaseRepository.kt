@@ -68,6 +68,4 @@ class FireStoreDatabaseRepository(private val onNewMessage: (Message) -> Unit) :
     override fun detach() {
         registration.remove()
     }
-
-
 }

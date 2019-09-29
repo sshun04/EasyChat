@@ -3,4 +3,6 @@
     <string name="app_name">EasyChat</string>
     <string name="defaultMessage">メッセージ</string>
     <string name="confirmCloseApp">終了しますか？</string>
+    <string name="finish">終了</string>
+    <string name="cancel">キャンセル</string>
 </resources>

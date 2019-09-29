@@ -11,7 +11,6 @@
         android:theme="@style/AppTheme">
         <activity
             android:name="com.example.easychat.presentation.scene.main.MainActivity"
-            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
