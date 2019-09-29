@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EasyChat</string>
+    <string name="defaultMessage">メッセージ</string>
+    <string name="confirmCloseApp">終了しますか？</string>
+</resources>
