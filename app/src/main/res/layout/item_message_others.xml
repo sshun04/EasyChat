@@ -44,7 +44,7 @@
                 android:layout_gravity="center|start"
                 android:gravity="center"
                 android:minHeight="24dp"
-                android:paddingHorizontal="@dimen/padding_medium"
+                android:paddingHorizontal="16dp"
                 android:paddingVertical="@dimen/padding_small"
                 app:boxCornerRadiusBottomEnd="8dp"
                 app:boxCornerRadiusBottomStart="8dp"
