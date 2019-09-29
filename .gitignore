@@ -333,3 +333,4 @@ obj/
 
 !/gradle/wrapper/gradle-wrapper.jar
 
+app/google-services.json
