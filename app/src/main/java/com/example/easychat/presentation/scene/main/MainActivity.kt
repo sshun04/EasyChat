@@ -55,11 +55,7 @@ class MainActivity : AppCompatActivity() {
             viewModel.sendMessage(message)
             messageEditText.text = null
             messageEditText.clearFocus()
-            mainRecyclerView.scrollTo(500, 1000)
         }
-
-
-
 
         viewModel.messages.observe(this, Observer {
             recyclerViewAdapter.insertNestPage(it)
@@ -69,13 +65,10 @@ class MainActivity : AppCompatActivity() {
             }
         })
 
-
         viewModel.newMessage.observe(this, Observer {
             recyclerViewAdapter.insertItem(it)
-//            mainRecyclerView.scrollToPosition(0)
+            mainRecyclerView.scrollToPosition(0)
         })
-
-
     }
 
     override fun onResume() {
