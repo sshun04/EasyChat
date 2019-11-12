@@ -23,6 +23,7 @@ class FireStoreDatabaseRepository(private val onNewMessage: (Message) -> Unit) :
 
     private val query = dataBase.collection(COLLECTION_PATH)
     private lateinit var registration: ListenerRegistration
+
     override suspend fun saveMessage(message: Message) {
         query
             .document()

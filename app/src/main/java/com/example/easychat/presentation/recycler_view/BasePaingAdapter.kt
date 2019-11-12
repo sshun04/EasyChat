@@ -10,7 +10,7 @@ abstract class BasePaingAdapter<VH : RecyclerView.ViewHolder> :
 
     override fun getItemCount(): Int = messages.count()
 
-    fun insertNestPage(nextPage: List<Message>) {
+    fun insertNextPage(nextPage: List<Message>) {
         messages.addAll(nextPage)
         notifyDataSetChanged()
     }

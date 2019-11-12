@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-//
+
         inputManager =
             getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
 
@@ -51,14 +51,13 @@ class MainActivity : AppCompatActivity() {
         }
 
         sendButton.setOnClickListener {
-            val message = messageEditText.text.toString()
-            viewModel.sendMessage(message)
+            viewModel.sendMessage(messageEditText.text.toString())
             messageEditText.text = null
             messageEditText.clearFocus()
         }
 
         viewModel.messages.observe(this, Observer {
-            recyclerViewAdapter.insertNestPage(it)
+            recyclerViewAdapter.insertNextPage(it)
             if (isFirstPage) {
                 mainRecyclerView.scrollToPosition(0)
                 isFirstPage = false
